@@ -469,6 +469,7 @@ footer {
 
 .card-footer {
   margin-top: 50px;
+  padding-top: 30px;
 }
 
 .card-body-duration {
@@ -708,8 +709,85 @@ footer {
   padding-right: 20px;
 }
 
+.join-radio {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.join-radio div {
+  display: flex;
+  align-items: center;
+}
+
+.join-radio label {
+  margin-right: 22px;
+}
+
+.join-radio input[type="radio"] {
+  cursor: pointer;
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+  appearance: none;
+  -webkit-appearance: none;
+  border: 0.2rem solid #fff;
+  background-color: #bebebe;
+  border-radius: 50%;
+  transition: all .1s;
+}
+
+.join-radio input[type="radio"]:checked {
+  box-shadow: 0 0 0 1px #d4d4d4;
+  background-color: #ebbb10;
+  border-width: 0.2rem;
+}
+
+.join-radio input[type="radio"]:focus-visible {
+  outline-offset: 0;
+}
+
+.join-radio.radio-class-type {
+  color: #240000;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.join-radio.radio-class-type div label {
+  cursor: pointer;
+  padding: 3px 8px;
+  border-radius: 5px;
+  transition: all .2s;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.join-radio.radio-class-type div label.beginner {
+  border: 2px solid #ebbb10;
+}
+.join-radio.radio-class-type div label.intermediate {
+  border: 2px solid #9F2E34;
+}
+.join-radio.radio-class-type div label.advanced {
+  border: 2px solid #53277E;
+  margin-bottom: 28px;
+}
+
+.join-radio.radio-class-type div label.beginner:hover {
+  background-color: #ebbb10;
+  color: #f8f8f8;
+}
+.join-radio.radio-class-type div label.intermediate:hover {
+  background-color: #9F2E34;
+  color: #f8f8f8;
+}
+.join-radio.radio-class-type div label.advanced:hover {
+  background-color: #53277E;
+  color: #f8f8f8;
+}
+
 .join-textarea {
-  padding: 8px 20px;
+  padding: 10px 20px;
   resize: none;
   height: auto;
 }
@@ -841,6 +919,9 @@ footer {
     margin-bottom: 50px;
     border-radius: 15px;
     transition: all .2s;
+  }
+  .join-right {
+    grid-template-columns: 1fr 3fr;
   }
   .join-text {
     font-size: 22px;
