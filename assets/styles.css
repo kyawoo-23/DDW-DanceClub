@@ -532,6 +532,75 @@ footer {
   background-color: #53277E;
 }
 
+.events {
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+}
+
+.events-title {
+  font-family: 'Raleway', sans-serif;
+  color: #ebbb10;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+}
+
+.events-title img {
+  cursor: pointer;
+  margin-left: 30px;
+  filter: invert(75%) sepia(91%) saturate(1096%) hue-rotate(356deg) brightness(97%) contrast(91%);
+}
+
+.showcase.event {
+  padding: 20px 28px;
+  background-color: #340000;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  transition: all .2s;
+}
+
+.showcase.event:hover {
+  background-color: #440000;
+}
+
+.showcase-img.event {
+  height: 200%;
+  width: 200%;
+}
+
+.showcase-img.event img {
+  border: 2px solid #ebbb10;
+  border-radius: 15px;
+}
+
+.showcase-img img {
+  border: 2px solid #ebbb10;
+  border-radius: 25px;
+  width: 100%;
+}
+
+.see-more {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ddd;
+  padding-top: 30px;
+  opacity: .8;
+}
+
+.see-more:hover {
+  opacity: 1;
+}
+
+.see-more img {
+  height: 70px;
+  width: 140px;  
+  filter: invert(89%) sepia(73%) saturate(0%) hue-rotate(113deg) brightness(97%) contrast(80%);
+}
+
 
 
 
@@ -695,5 +764,8 @@ footer {
   }
   .card-body {
     height: 420px;
+  }
+  .events-title img {
+    margin-left: 20px;
   }
 }
