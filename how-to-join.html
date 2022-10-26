@@ -1,12 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How to Join</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>How to Join</title>
+	<link rel="icon" href="./assets/logo/logo.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
 </head>
 <body>
-  how to join
+	<nav>
+		<div class="logo-badge col-12">
+			<div class="logo">
+				<img src="./assets/logo/logo.png" alt="dancing club logo" />
+			</div>
+			<div class="logo-title">
+				<h1>Lindisfarne Ballroom Dancing Club</h1>
+			</div>
+		</div>
+		<div class="nav-items col-12">
+			<div class="nav-item">
+				<a href="./index.html"><span>H</span>OME</a>
+			</div>
+			<div class="nav-item">
+				<a href="./classes.html"><span>C</span>LASSES</a>
+			</div>
+			<div class="nav-item">
+				<a href="./events.html"><span>E</span>VENTS</a>	
+			</div>
+			<div class="nav-item">
+				<a href="./exams.html"><span>E</span>XAMS</a>
+			</div>
+			<div class="nav-item nav-dropdown">
+				<a>
+					<span>C</span>ONTACT 
+					<img class="dropdown-icon" src="./assets/icons/down.svg" alt="down-icon" />
+				</a>
+				<div class="dropdown-items">
+					<div class="dropdown-item active">
+						<a href="./about-us.html">ABOUT US</a>
+					</div>
+					<hr />
+					<div class="dropdown-item">
+						<a href="./contact-us.html">CONTACT US</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+    <div class="how-to-join">
+      <div class="events-title how-to-join-title">
+        <h1>Ready to trip the light fantastic?</h1>
+        <h2>Fill in the form below!</h2>
+      </div>
+      <div class="join-form">
+        <div class="join-left">
+          <img class="join-icon" src="./assets/icons/listening.jpg" alt="listening to music icon" />
+          <h3>Registeration Form</h3>
+          <p>It should take about 2-3mins filling the form.</p>
+          <img class="join-arrow" src="./assets/icons/next.svg" alt="form-arrow" />
+        </div>
+        <form action="#" class="join-right">
+          <label class="join-label" for="name">Name</label>
+          <input value="" class="join-input" type="text" placeholder="Enter your Name" id="name" required />
+					<label class="join-label" for="gender">Gender</label>
+          <input class="join-input" type="text" placeholder="Enter your Name" id="gender" required />
+					<label class="join-label" for="birthday">Date of Birth</label>
+          <input class="join-input dob" type="date" placeholder="Enter your Birthday" id="birthday" min="1918-01-01" max="2018-12-31" required />
+          <label class="join-label" for="email">Email</label>
+          <input class="join-input" type="email" placeholder="Enter your Email address" id="email" required />
+					<label class="join-label" for="phone">Contact No.</label>
+          <input class="join-input" type="tel" placeholder="Enter your Phone Number" id="phone" required />
+					<label class="join-label" for="address">Address</label>
+          <textarea class="join-textarea" type="email" placeholder="Enter your Address information" id="address" rows="5" required ></textarea>
+					<div class="join-btn-gp">
+						<input class="join-clear" type="reset" value="Clear" />
+						<input class="join-reg" type="submit" value="REGISTER" />
+					</div>
+				</form>
+      </div>
+    </div>
+	</main>
+	<footer>
+		<div class="footer-top">
+			<div class="logo">
+				<img src="./assets/logo/logo.png" alt="logo" />
+			</div>
+			<div class="footer-links-container">
+				<h2 class="footer-title">Links</h2>
+				<div class="footer-links">
+					<div class="nav-item">
+						<a href="./index.html"><span>H</span>OME</a>
+					</div>
+					<div class="nav-item">
+						<a href="./classes.html"><span>C</span>LASSES</a>
+					</div>
+					<div class="nav-item">
+						<a href="./events.html"><span>E</span>VENTS</a>	
+					</div>
+					<div class="nav-item">
+						<a href="./exams.html"><span>E</span>XAMS</a>
+					</div>
+					<div class="nav-item active">
+						<a href="./how-to-join.html"><span>H</span>OW TO JOIN</a>
+					</div>
+					<div class="nav-item">
+						<a href="./uniform-guide.html"><span>U</span>NIFORM GUIDE</a>
+					</div>
+					<div class="nav-item">
+						<a href="./contact-us.html"><span>C</span>ONTACT US</a>	
+					</div>
+					<div class="nav-item">
+						<a href="./about-us.html"><span>A</span>BOUT US</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-social-media">
+				<h2 class="footer-title">Social Medias</h2>
+				<div class="footer-social">
+					<div class="footer-media">
+						<img src="./assets/icons/facebook.png" alt="facebook" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/instagram.png" alt="instagram" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/twitter.png" alt="twitter" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/pinterest.png" alt="pinterest" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© 2022 Lindisfarne Ballroom Dancing Club | All Rights Reserved</p>
+		</div>
+	</footer>
 </body>
 </html>
