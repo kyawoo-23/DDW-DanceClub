@@ -330,6 +330,10 @@ main {
   color: #ebbb10;
 }
 
+.btn-uniform {
+  border: 2px solid #240000;
+}
+
 .btn-form {
   display: flex;
   justify-content: flex-end;
@@ -576,12 +580,6 @@ footer {
 .showcase-img.event img {
   border: 2px solid #ebbb10;
   border-radius: 15px;
-}
-
-.showcase-img img {
-  border: 2px solid #ebbb10;
-  border-radius: 25px;
-  width: 100%;
 }
 
 .see-more {
@@ -968,8 +966,14 @@ footer {
     font-size: 22px;
   }
   .showcase .showcase-img {
-    width: 340px;
+    width: 280px;
     margin: 70px auto;
+  }
+  .showcase.event {
+    padding: 20px 2px;
+  }
+  .showcase-content {
+    padding: 0 10px;
   }
   .footer-top {
     grid-template-columns: 1fr;
