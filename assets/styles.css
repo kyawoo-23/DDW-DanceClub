@@ -297,6 +297,10 @@ main {
   color: #f8f8f8;
   font-family: 'Smooch Sans', sans-serif;
   font-size: 28px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  column-gap: 10px;
 }
 
 .showcase-body {
@@ -938,14 +942,14 @@ footer {
     padding-top: 0;
   }
   nav {
-    height: 265px;
+    height: 275px;
     position: static;
   }
   .logo-title {
     font-size: 15px;
   }
   .nav-items {
-    margin-top: 10px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
