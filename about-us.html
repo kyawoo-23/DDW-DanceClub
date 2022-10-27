@@ -1,12 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About Us</title>
+	<link rel="icon" href="./assets/logo/logo.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
 </head>
 <body>
-  about us
+	<nav>
+		<div class="logo-badge col-12">
+			<div class="logo">
+				<img src="./assets/logo/logo.png" alt="dancing club logo" />
+			</div>
+			<div class="logo-title">
+				<h1>Lindisfarne Ballroom Dancing Club</h1>
+			</div>
+		</div>
+		<div class="nav-items col-12">
+			<div class="nav-item">
+				<a href="./index.html"><span>H</span>OME</a>
+			</div>
+			<div class="nav-item">
+				<a href="./classes.html"><span>C</span>LASSES</a>
+			</div>
+			<div class="nav-item">
+				<a href="./events.html"><span>E</span>VENTS</a>	
+			</div>
+			<div class="nav-item">
+				<a href="./exams.html"><span>E</span>XAMS</a>
+			</div>
+			<div class="nav-item nav-dropdown">
+				<a>
+					<span>C</span>ONTACT 
+					<img class="dropdown-icon" src="./assets/icons/down.svg" alt="down-icon" />
+				</a>
+				<div class="dropdown-items">
+					<div class="dropdown-item active">
+						<a href="./about-us.html"><span>A</span>BOUT US</a>
+					</div>
+					<hr />
+					<div class="dropdown-item">
+						<a href="./contact-us.html"><span>C</span>ONTACT US</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="hero-img">
+			<img src="./assets/img/about us.jpg" alt="about us" />
+			<div class="overlay">
+				<div class="classes-title">
+          <h1>About Us</h1>
+          <h3>Lindisfarne's best Ballroom Dancing Club</h3>
+				</div>
+			</div>
+		</div>
+    <div class="who-are-we">
+      <div class="who-left">
+        <div class="who-bot-img">
+          <img src="./assets/img/about 1.jpg" alt="about 1" />
+        </div>
+        <div class="who-top-img">
+          <img src="./assets/img/about 2.jpg" alt="about 2" />
+        </div>
+      </div>
+      <div class="who-right">
+        <h2 class="about-title">Who are we?</h2>
+        <p>Lindisfarne Ballroom Dancing Academy was founded by a couple in 2016 due to demand from clients. It was at first a small group of handful dance enthusiasts but now this has grown significantly and lessons and dances are being held three times a week. The club includes ballroom dance classes for beginners, intermediate and advanced dancers. They also hold a weekly dance for all members on a Saturday night. The club is located in the center of Lindisfarne Island.</p>
+        <p>Our mission is to form students, through our specialized training, at various levels of classical dance, contemporary dance, latin rhythms, yoga and zumba, in the interest of art, health and culture.</p>
+        <p>Click on the button below to see all of our available classes!</p>
+        <form class="btn-form" action="./classes.html">
+          <input class="btn" type="submit" value="Our Classes" />
+        </form>
+      </div>
+    </div>
+    <div class="visit-us">
+      <div class="visit-left">
+        <h2 class="about-title">Find us on Google Map</h2>
+        <div class="visit-info">
+          <div class="visit-data">
+            <div class="visit-icon">
+              <img src="./assets/icons/location.svg" alt="location" />
+            </div>
+            <p><a href="https://www.google.com/maps/place/Lindisfarne+Ballroom+Dancing+Club/@55.6711886,-1.8027651,17z/data=!3m1!4b1!4m5!3m4!1s0x48874d423653a727:0x73c463dddbdbd8d1!8m2!3d55.6711941!4d-1.8005759" target="_blank" rel="noopener noreferrer">2SJ, Marygate, Berwick-upon-Tweed, United Kingdom</a></p>
+          </div>
+          <div class="visit-data">
+            <div class="visit-icon">
+              <img src="./assets/icons/email.svg" alt="email" />
+            </div>
+            <p>lindisfarnedanceclub@gmail.com</p>
+          </div>
+          <div class="visit-data">
+            <div class="visit-icon">
+              <img src="./assets/icons/phone.svg" alt="phone" />
+            </div>
+            <p><a href="tel:+44 1632 960432">+44 1632 960432</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="visit-right">
+        <a href="https://www.google.com/maps/place/Lindisfarne+Ballroom+Dancing+Club/@55.6711886,-1.8027651,17z/data=!3m1!4b1!4m5!3m4!1s0x48874d423653a727:0x73c463dddbdbd8d1!8m2!3d55.6711941!4d-1.8005759" target="_blank" rel="noopener noreferrer">
+        <img src="./assets/img/location.png" alt="our location" /></a>
+      </div>
+    </div>
+    <div class="featured-vid">
+      <h2 class="about-title">Featured Video</h2>
+      <iframe width="100%" height="620" src="https://www.youtube-nocookie.com/embed/zV1qLYukTH8" title="YouTube video player" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="about-tutors">
+      <h2 class="about-title">Our Proud Tutors</h2>
+      <div class="tutors">
+        <div class="tutor">
+          <div class="tutor-img">
+            <img src="./assets/img/teacher 1.jpg" alt="tutor 1" />
+          </div>
+          <div class="tutor-info">
+            <h3>Eliza Scarlet</h3>
+            <div class="tutor-social">
+              <div class="tutor-media">
+                <img src="./assets/icons/facebook tr.png" alt="facebook" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/twitter tr.png" alt="twitter" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/linkedin tr.png" alt="linkedin" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutor">
+          <div class="tutor-img">
+            <img src="./assets/img/teacher 2.jpg" alt="tutor 2" />
+          </div>
+          <div class="tutor-info">
+            <h3>Leo Chen</h3>
+            <div class="tutor-social">
+              <div class="tutor-media">
+                <img src="./assets/icons/facebook tr.png" alt="facebook" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/twitter tr.png" alt="twitter" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/linkedin tr.png" alt="linkedin" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutor">
+          <div class="tutor-img">
+            <img src="./assets/img/teacher 3.jpg" alt="tutor 3" />
+          </div>
+          <div class="tutor-info">
+            <h3>Arthur Smith</h3>
+            <div class="tutor-social">
+              <div class="tutor-media">
+                <img src="./assets/icons/facebook tr.png" alt="facebook" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/twitter tr.png" alt="twitter" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/linkedin tr.png" alt="linkedin" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tutor">
+          <div class="tutor-img">
+            <img src="./assets/img/teacher 4.jpg" alt="tutor 4" />
+          </div>
+          <div class="tutor-info">
+            <h3>Amber Beatrix</h3>
+            <div class="tutor-social">
+              <div class="tutor-media">
+                <img src="./assets/icons/facebook tr.png" alt="facebook" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/twitter tr.png" alt="twitter" />
+              </div>
+              <div class="tutor-media">
+                <img src="./assets/icons/linkedin tr.png" alt="linkedin" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</main>
+	<footer>
+		<div class="footer-top">
+			<div class="logo">
+				<img src="./assets/logo/logo.png" alt="logo" />
+			</div>
+			<div class="footer-links-container">
+				<h2 class="footer-title">Links</h2>
+				<div class="footer-links">
+					<div class="nav-item">
+						<a href="./index.html"><span>H</span>OME</a>
+					</div>
+					<div class="nav-item">
+						<a href="./classes.html"><span>C</span>LASSES</a>
+					</div>
+					<div class="nav-item">
+						<a href="./events.html"><span>E</span>VENTS</a>	
+					</div>
+					<div class="nav-item">
+						<a href="./exams.html"><span>E</span>XAMS</a>
+					</div>
+					<div class="nav-item">
+						<a href="./how-to-join.html"><span>H</span>OW TO JOIN</a>
+					</div>
+					<div class="nav-item">
+						<a href="./uniform-guide.html"><span>U</span>NIFORM GUIDE</a>
+					</div>
+					<div class="nav-item">
+						<a href="./contact-us.html"><span>C</span>ONTACT US</a>	
+					</div>
+					<div class="nav-item active">
+						<a href="./about-us.html"><span>A</span>BOUT US</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-social-media">
+				<h2 class="footer-title">Social Medias</h2>
+				<div class="footer-social">
+					<div class="footer-media">
+						<img src="./assets/icons/facebook.png" alt="facebook" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/instagram.png" alt="instagram" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/twitter.png" alt="twitter" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/pinterest.png" alt="pinterest" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© 2022 Lindisfarne Ballroom Dancing Club | All Rights Reserved</p>
+		</div>
+	</footer>
 </body>
 </html>

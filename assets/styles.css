@@ -124,18 +124,29 @@ nav {
 
 .dropdown-item {
   padding: 5px 15px 5px 10px;
-  height: 45px;
+  height: 50px;
 }
 
 .dropdown-item a {
   font-size: 15px;
   line-height: 35px;
   padding-left: 10px;
+  opacity: .6 !important;
 }
 
 .dropdown-item a:hover {
   background-color: #340000;
   border-radius: 10px;
+  opacity: 1 !important;
+}
+
+.dropdown-item.active a {
+  vertical-align: baseline;
+  opacity: 1 !important;
+}
+
+.dropdown-item.active a span {
+  font-size: 22px;
 }
 
 .dropdown-icon {
@@ -832,6 +843,205 @@ footer {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
+.who-are-we {
+  display: grid;
+  grid-template-columns: minmax(560px, 1fr) 1fr;
+  width: 90%;
+  margin: 80px auto;
+}
+
+.who-left {
+  position: relative;
+  height: 500px;
+}
+
+.who-bot-img, .who-top-img {
+  width: 270px;
+}
+
+.who-bot-img img, .who-top-img img {
+  filter: brightness(80%);
+  border-radius: 10px;
+  width: 100%;
+  transition: all .2s;
+}
+
+.who-bot-img img:hover, .who-top-img img:hover {
+  filter: brightness(100%);
+}
+
+.who-bot-img {
+  left: 80px;
+  position: relative;
+}
+
+.who-top-img {
+  right: 80px;
+  top: 130px;
+  position: absolute;
+}
+
+.who-right {
+  padding-top: 50px;
+  padding-right: 20px;
+  font-family: 'RaleWay', sans-serif;
+}
+
+.about-title {
+  color: #ebbb10;
+  font-size: 45px;
+}
+
+.who-right p {
+  color: #ddd;
+  padding-top: 20px;
+}
+
+.visit-us {
+  width: 90%;
+  margin: auto;
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  justify-items: center;
+}
+
+.visit-info {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 40px 30px;
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgb(235, 187, 16, .6);
+}
+
+.visit-data {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 18px;
+  color: #ddd;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.visit-data p {
+  margin-left: 30px;
+}
+
+.visit-data p a {
+  color: #ddd;
+}
+
+.visit-icon {
+  width: 36px;
+  filter: invert(95%) sepia(1%) saturate(3741%) hue-rotate(242deg) brightness(116%) contrast(66%);
+}
+
+.visit-icon img {
+  width: 100%;
+}
+
+.visit-right {
+  width: 65%;
+}
+
+.visit-right img {
+  width: 100%;
+}
+
+.featured-vid {
+  margin: 60px auto;
+  width: 90%;
+}
+
+.featured-vid iframe {
+  margin-top: 25px;
+}
+
+.about-tutors {
+  width: 90%;
+  margin: 90px auto;
+}
+
+.about-tutors .about-title {
+  text-align: center;
+}
+
+.tutors {
+  background-color: #440000;
+  padding: 60px 40px;
+  border-radius: 10px;
+  margin-top: 50px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  gap: 50px;
+}
+
+.tutor-img {
+  width: auto;
+  margin: auto;
+  filter: brightness(80%);
+}
+
+.tutor:hover .tutor-img {
+  filter: brightness(100%);
+}
+
+.tutor-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.tutor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tutor-info h3 {
+  cursor: default;
+  font-size: 26px;
+  color: #f8f8f8;
+  font-family: 'Smooch', sans-serif;
+  margin: 20px 0;
+  transition: all .2s;
+}
+
+.tutor-info h3:hover {
+  transform: scale(110%);
+}
+
+.tutor-social {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.tutor-media {
+  cursor: pointer;
+  margin: 0 10px;
+  width: 30px;
+  filter: invert(95%) sepia(1%) saturate(3741%) hue-rotate(242deg) brightness(116%) contrast(66%);
+  transition: all .2s;
+}
+
+.tutor-media:hover {
+  filter: invert(100%) sepia(78%) saturate(17%) hue-rotate(210deg) brightness(108%) contrast(95%);
+}
+
+.tutor-media img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
   main {
@@ -933,6 +1143,21 @@ footer {
   }
   .join-label {
     padding-left: 0;
+  }
+  .who-left {
+    grid-column: span 2;
+  }
+  .who-right {
+    grid-column: span 2;
+  }
+  .visit-us {
+    align-items: center;
+  }
+  .tutors {
+    grid-template-columns: 1fr 1fr;
+  }
+  .tutor-img {
+    width: 220px;
   }
 }
 
@@ -1092,5 +1317,37 @@ footer {
   .join-clear {
     margin-right: 0;
     margin-bottom: 22px;
+  }
+  .who-are-we {
+    grid-template-columns: minmax(310px, 1fr) 1fr;
+  }
+  .who-bot-img, .who-top-img {
+    width: 240px;
+  }
+  .who-bot-img {
+    left: 10px;
+  }
+  .who-top-img {
+    top: 180px;
+    right: 10px;
+  }
+  .who-right {
+    margin-top: 50px;
+  }
+  .visit-info {
+    padding: 20px 15px;
+  }
+  .visit-us {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .visit-right {
+    width: 50%;
+  }
+  .tutors {
+    grid-template-columns: 1fr;
+  }
+  .tutor-img {
+    width: 200px;
   }
 }
