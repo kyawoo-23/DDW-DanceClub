@@ -1479,6 +1479,9 @@ footer {
     margin-top: 0;
   }
   .contact-where .box {
-    padding: 40px 20px;
+    padding: 40px 10px;
+  }
+  .contact-info {
+    font-size: 15px;
   }
 }
