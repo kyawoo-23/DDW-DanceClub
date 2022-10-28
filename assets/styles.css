@@ -684,7 +684,7 @@ footer {
   padding-left: 2px;
 }
 
-.join-input, .join-textarea {
+.join-input, .join-textarea, .contact-select {
   width: 90%;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
@@ -697,7 +697,7 @@ footer {
   outline: none;
 }
 
-.join-input:active, .join-input:focus, .join-textarea:active, .join-textarea:focus {
+.join-input:active, .join-input:focus, .join-textarea:active, .join-textarea:focus, .contact-select:active, .contact-select:focus {
   border: 2px solid #bebebe;
   background: #ddd;
 }
@@ -912,7 +912,6 @@ footer {
   margin-top: 30px;
   border-radius: 10px;
   padding: 40px 30px;
-  /* From https://css.glass */
   background: rgba(255, 255, 255, 0.2);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -1042,6 +1041,113 @@ footer {
   width: 100%;
 }
 
+.contact-us {
+  width: 90%;
+  margin: auto;
+  padding: 45px 0;
+}
+
+.contact-us h2 {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.contact-us h2 img {
+  width: 40px;
+  margin-left: 10px;
+}
+
+.contact-form {
+  margin-top: 30px;
+  padding: 45px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 20px;
+  column-gap: 40px;
+  align-items: center;
+  background-color: #f2f2f2;
+  color: #1b1b1b;
+  border-radius: 10px;
+}
+
+.contact-form h1 {
+  grid-column: span 2;
+}
+
+.contact-input .join-label {
+  padding: 0;
+}
+
+.contact-input .join-input, .contact-select, .contact-input .join-textarea {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contact-input.msg {
+  grid-column: span 2;
+}
+
+.contact-select {
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all .1s;
+  color: #1b1b1b;
+}
+
+.contact-select:focus {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.contact-select[data-chosen='beginner'], .contact-select[data-chosen='intermediate'], .contact-select[data-chosen='advanced'] {
+  border-radius: 10px;
+}
+
+.contact-select option {
+  font-size: 18px;
+}
+
+.join-btn-gp.contact {
+  width: 100%;
+  margin-top: 25px;
+}
+
+.contact-where {
+  width: 90%;
+  margin: auto;
+  padding: 60px 0 100px 0;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.contact-where .box {
+  padding: 50px;
+  border-radius: 10px;
+  background-color: #ddd;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+.contact-info h3 a, .contact-info h3 {
+  color: #1b1b1b;
+  text-align: center;
+}
+
+.contact-logo {
+  width: 42px;
+}
+
+.contact-logo img {
+  width: 100%;
+}
+
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
   main {
@@ -1158,6 +1264,10 @@ footer {
   }
   .tutor-img {
     width: 220px;
+  }
+  .contact-where {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 }
 
@@ -1349,5 +1459,26 @@ footer {
   }
   .tutor-img {
     width: 200px;
+  }
+  .how-to-join-title h2 {
+    margin-left: 0;
+  }
+  .contact-form {
+    gap: 0;
+  }
+  .contact-form h1 {
+    margin-bottom: 18px;
+  }
+  .contact-input {
+    grid-column: span 2;
+  }
+  .contact-input.msg {
+    margin-top: 20px;
+  }
+  .join-btn-gp.contact {
+    margin-top: 0;
+  }
+  .contact-where .box {
+    padding: 40px 20px;
   }
 }

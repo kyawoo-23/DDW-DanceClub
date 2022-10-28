@@ -1,12 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Contact Us</title>
+	<link rel="icon" href="./assets/logo/logo.png">
+	<link rel="stylesheet" type="text/css" href="./assets/styles.css">
 </head>
 <body>
-  contact us
+	<nav>
+		<div class="logo-badge col-12">
+			<div class="logo">
+				<img src="./assets/logo/logo.png" alt="dancing club logo" />
+			</div>
+			<div class="logo-title">
+				<h1>Lindisfarne Ballroom Dancing Club</h1>
+			</div>
+		</div>
+		<div class="nav-items col-12">
+			<div class="nav-item">
+				<a href="./index.html"><span>H</span>OME</a>
+			</div>
+			<div class="nav-item">
+				<a href="./classes.html"><span>C</span>LASSES</a>
+			</div>
+			<div class="nav-item">
+				<a href="./events.html"><span>E</span>VENTS</a>	
+			</div>
+			<div class="nav-item">
+				<a href="./exams.html"><span>E</span>XAMS</a>
+			</div>
+			<div class="nav-item nav-dropdown">
+				<a>
+					<span>C</span>ONTACT 
+					<img class="dropdown-icon" src="./assets/icons/down.svg" alt="down-icon" />
+				</a>
+				<div class="dropdown-items">
+					<div class="dropdown-item">
+						<a href="./about-us.html">ABOUT US</a>
+					</div>
+					<hr />
+					<div class="dropdown-item active">
+						<a href="./contact-us.html"><span>C</span>ONTACT US</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<main>
+    <div class="contact-us">
+      <div class="how-to-join-title">
+        <h1>Got some inquiries?</h1>
+        <br />
+        <h2>
+          Love to hear from you
+          <img src="./assets/icons/waving-hand-sign.png" alt="hand waving" />
+        </h2>
+      </div>
+      <form action="#" class="contact-form">
+        <h1>Send us a Message!</h1>
+        <div class="contact-input">
+          <label class="join-label" for="name">Name</label>
+          <input class="join-input" type="text" placeholder="Enter your Name" id="name" required />
+        </div>
+        <div class="contact-input">
+          <label class="join-label" for="email">Email</label>
+          <input class="join-input" type="email" placeholder="Enter your Email address" id="email" required />
+        </div>
+        <div class="contact-input">
+					<label class="join-label" for="phone">Contact No.</label>
+          <input class="join-input" type="tel" placeholder="Enter your Phone Number" id="phone" required />
+        </div>
+        <div class="contact-input">
+          <label class="join-label" for="class">Interested Class</label>
+          <select class="contact-select" onchange="this.dataset.chosen = this.value;" name="class" id="class" required>
+            <option value="" disabled selected>Select a Class</option>
+            <option value="beginner">Beginner Class</option>
+            <option value="intermediate">Intermediate Class</option>
+            <option value="advanced">Advanced Class</option>
+          </select>
+        </div>
+        <div class="contact-input msg">
+          <label class="join-label" for="message">Message</label>
+          <textarea class="join-textarea" placeholder="Enter your Message" id="message" rows="8" required></textarea>
+        </div>
+
+        <div class="join-btn-gp contact">
+          <input class="join-clear" type="reset" value="Clear" />
+          <input class="join-reg" type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+
+    <div class="contact-where">
+      <div class="box">
+        <div class="contact-logo">
+          <img src="./assets/icons/email.svg" alt="email" />
+        </div>
+        <div class="contact-info">
+          <h3>lindisfarnedanceclub@gmail.com</h3>
+        </div>
+      </div>
+			<div class="box">
+        <div class="contact-logo">
+          <img src="./assets/icons/location.svg" alt="location" />
+        </div>
+        <div class="contact-info">
+          <h3><a href="https://www.google.com/maps/place/Lindisfarne+Ballroom+Dancing+Club/@55.6711886,-1.8027651,17z/data=!3m1!4b1!4m5!3m4!1s0x48874d423653a727:0x73c463dddbdbd8d1!8m2!3d55.6711941!4d-1.8005759" target="_blank" rel="noopener noreferrer">2SJ, Marygate, Berwick-upon-Tweed, United Kingdom</a></h3>
+        </div>
+      </div>
+      <div class="box">
+        <div class="contact-logo">
+          <img src="./assets/icons/phone.svg" alt="phone" />
+        </div>
+        <div class="contact-info">
+          <h3><a href="tel:+44 1632 960432">+44 1632 960432</a></h3>
+        </div>
+      </div>
+    </div>
+	</main>
+	<footer>
+		<div class="footer-top">
+			<div class="logo">
+				<img src="./assets/logo/logo.png" alt="logo" />
+			</div>
+			<div class="footer-links-container">
+				<h2 class="footer-title">Links</h2>
+				<div class="footer-links">
+					<div class="nav-item">
+						<a href="./index.html"><span>H</span>OME</a>
+					</div>
+					<div class="nav-item">
+						<a href="./classes.html"><span>C</span>LASSES</a>
+					</div>
+					<div class="nav-item">
+						<a href="./events.html"><span>E</span>VENTS</a>	
+					</div>
+					<div class="nav-item">
+						<a href="./exams.html"><span>E</span>XAMS</a>
+					</div>
+					<div class="nav-item">
+						<a href="./how-to-join.html"><span>H</span>OW TO JOIN</a>
+					</div>
+					<div class="nav-item">
+						<a href="./uniform-guide.html"><span>U</span>NIFORM GUIDE</a>
+					</div>
+					<div class="nav-item active">
+						<a href="./contact-us.html"><span>C</span>ONTACT US</a>	
+					</div>
+					<div class="nav-item">
+						<a href="./about-us.html"><span>A</span>BOUT US</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer-social-media">
+				<h2 class="footer-title">Social Medias</h2>
+				<div class="footer-social">
+					<div class="footer-media">
+						<img src="./assets/icons/facebook.png" alt="facebook" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/instagram.png" alt="instagram" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/twitter.png" alt="twitter" />
+					</div>
+					<div class="footer-media">
+						<img src="./assets/icons/pinterest.png" alt="pinterest" />
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>© 2022 Lindisfarne Ballroom Dancing Club | All Rights Reserved</p>
+		</div>
+	</footer>
 </body>
 </html>
