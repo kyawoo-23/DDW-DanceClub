@@ -239,6 +239,7 @@ main {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   color: #ebbb10;
+  padding: 20px 0;
 }
 
 .benefit-icons {
@@ -1148,6 +1149,57 @@ footer {
   width: 100%;
 }
 
+.uniform-guide {
+  padding: 45px 0;
+}
+
+.guide {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr minmax(600px, 1fr);
+  align-items: center;
+  justify-items: center;
+  padding: 120px 5% 120px 5%;
+  margin: 80px 0;
+  gap: 20px;
+  background-color: #440000;
+}
+
+.guide.right {
+  grid-template-columns: minmax(600px, 1fr) 1fr;
+}
+
+.uniform-info.right {
+  order: 2;
+}
+
+.uniform-info {
+  color: #ddd;
+}
+
+.uniform-info p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.uniform-info h2 {
+  color: #ebbb10;
+  font-size: 40px;
+  font-family: 'Montez', cursive;
+  padding-bottom: 20px;
+}
+
+.uniform-img {
+  width: 560px;
+}
+
+.uniform-img img {
+  width: 100%;
+  border: 2px solid #ebbb10;
+  border-radius: 10px;
+  cursor: zoom-in;
+}
+
 @media only screen and (max-width: 1024px) {
   /* For tablets: */
   main {
@@ -1268,6 +1320,12 @@ footer {
   .contact-where {
     grid-template-columns: 1fr;
     gap: 30px;
+  }
+  .guide, .guide.right {
+    grid-template-columns: 1fr;
+  }
+  .uniform-info {
+    order: 2;
   }
 }
 
@@ -1483,5 +1541,11 @@ footer {
   }
   .contact-info {
     font-size: 15px;
+  }
+  .uniform-img {
+    width: auto;
+  }
+  .uniform-info h2 {
+    font-size: 32px;
   }
 }
