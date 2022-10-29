@@ -435,7 +435,8 @@ footer {
   text-align: center;
   font-family: 'RaleWay', sans-serif;
   color: #ebbb10;
-  margin: 40px 0;
+  margin: 40px auto;
+  width: 90%;
 }
 
 .classes-container {
@@ -1362,6 +1363,9 @@ footer {
   .welcome-text .explore-more a {
     font-size: 22px;
   }
+  .overlay .welcome-text {
+    padding-top: 40px;
+  }
   .showcase .showcase-img {
     width: 280px;
     margin: 70px auto;
@@ -1400,11 +1404,11 @@ footer {
     height: 36px;
     width: 36px;
   }
+  .classes-title {
+    width: 90%;
+  }
   .classes-title h1 {
     font-size: 42px;
-  }
-  .classes-title h3 {
-    font-size: 22px;
   }
   .classes-cards {
     grid-template-columns: 1fr;
@@ -1415,6 +1419,10 @@ footer {
   }
   .card-content {
     font-size: 34px;
+    margin-top: 30px;
+  }
+  .fees {
+    padding: 10px 0;
   }
   .card-body-duration {
     grid-template-columns: 1fr;
