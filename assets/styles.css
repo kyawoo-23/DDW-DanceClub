@@ -223,8 +223,8 @@ main {
 }
 
 .right-arrow {
-  height: 20px !important;
-  width: 30px !important;
+  height: 20px;
+  width: 30px;
   filter: invert(94%) sepia(49%) saturate(1%) hue-rotate(333deg) brightness(108%) contrast(95%);
   margin-left: 10px;
 }
