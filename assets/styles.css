@@ -215,6 +215,8 @@ main {
 .welcome-text .explore-more a {
   font-size: 28px;
   color: #ddd;
+  display: flex;
+  align-items: center;
 }
 
 .explore-more a:hover {
